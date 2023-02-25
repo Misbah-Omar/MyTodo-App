@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Todo App</title>
+        <title>MyTodo App</title>
+        <link rel="stylesheet" href="styles/mainbox.css">
+        <script src="functions.js"></script>
     </head>
     <body>
-      <script src="functions.js"></script>   
-        <input id="todo-title" type="text" />
-        <input id="date-picker" type="date" />
-        <button onclick="addTodo();">Add Todo</button>
-        <div id="todo-list"></div>
+         <div class="mainbox">
+            <p class="heading">My Todo List</p>
+            <div class="inputs">
+              <input id="todo-title" type="text" placeholder="Todo description" />
+              <input id="date-picker" type="date" />
+            </div>
+            
+            <button onclick="addTodo();">Add Todo</button>
+            <div id="todo-list"></div>
+         </div>
+        
     </body>
 </html>

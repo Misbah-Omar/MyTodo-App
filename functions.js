@@ -92,7 +92,7 @@ function render(){
 
     todos.forEach(function (todo) {
     const element = document.createElement('div');
-    element.innerText = todo.title + ' ' + todo.dueDate;
+    element.innerText = todo.title + ' Due on : ' + todo.dueDate;
 
     const deleteButton = document.createElement('button');
     deleteButton.innerText = 'Delete';
