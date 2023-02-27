@@ -93,11 +93,11 @@ function render(){
     todos.forEach(function (todo) {
     const element = document.createElement('div');
     element.innerText = todo.title + ' Due on : ' + todo.dueDate;
-    element.style= 'background: #f4f4f4; margin: 5px; padding: 10px 20px; cursor: pointer;';
+    element.style= 'background: lightblue; margin: 5px; padding: 10px 20px; cursor: pointer;';
 
     const deleteButton = document.createElement('button');
     deleteButton.innerText = 'Delete';
-    deleteButton.style = 'margin-left: 12px; background-color: lightblue; float: right;';
+    deleteButton.style = 'margin-left: 12px; background-color: lightskyblue; float: right;';
     deleteButton.onclick = deleteTodo;
     deleteButton.id = todo.id;
     element.appendChild(deleteButton);
