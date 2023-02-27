@@ -1,20 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body{
-  background-color: lightgray;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 .mainbox{
-    margin: auto;
-    margin-top: 103px;
-    display: flex;
-    top: 108px;
-    left: 183px;
-    width: 1000px;
-    height: 555px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: lightblue;
-    font-size: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
 }
 .heading{
   margin: none;
@@ -31,6 +40,9 @@ body{
 #date-picker{
   text-align: center;
   width: 10rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 .inputs{
   display: flex;
@@ -38,4 +50,28 @@ body{
 }
 #todo-title{
 
+}
+.btn {
+  display: inline-block;
+  background: lightgreen;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
 }
